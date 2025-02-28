@@ -18,7 +18,7 @@ An overview of the setup and testing process for this project.
 - **Verification:** Check your Java version with:
     ```bash
        java --version
-  *Your version should be 18 or above.*
+*Your version should be 18 or above.*
 
 ### Browser (tested Firefox 135)
 - **Download Firefox:** Get the latest version from the Mozilla Firefox download page.
@@ -32,10 +32,10 @@ Although the project should run on any operating system, it has been tested on:
 2. **Navigate to the Project Directory:**  
    Change your current directory to the project's root folder.
 3. **Initial Dependency Installation:**  
-   For the first run, install Maven dependencies with:
+- For the first run, install Maven dependencies with:
      ```bash
         mvn clean install
-   *All needed dependences should be download and installed and the test also run successfully.*
+*All dependences should be installed and the tests also run successfully*
 
 4. **Run Tests**
 For subsequent runs, simply execute:
