@@ -30,7 +30,7 @@ Although the project should run on any operating system, it has been tested on:
 1. **Clone the Repository:**  
    Clone the repository to your local machine.
    ```bash
-      git clone https://github.com/your-username/selenium-ui-automation.git
+      git clone git@github.com:sangcongtruong/hometask.git
 
 3. **Navigate to the Project Directory:**  
    Change your current directory to the project's root folder.
