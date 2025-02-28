@@ -29,15 +29,22 @@ Although the project should run on any operating system, it has been tested on:
 ## How to Run Tests
 1. **Clone the Repository:**  
    Clone the repository to your local machine.
-2. **Navigate to the Project Directory:**  
+   ```bash
+      git clone https://github.com/your-username/selenium-ui-automation.git
+
+3. **Navigate to the Project Directory:**  
    Change your current directory to the project's root folder.
-3. **Initial Dependency Installation:**  
+   ```bash
+      cd selenium-ui-automation
+5. **Initial Dependency Installation:**  
 - For the first run, install Maven dependencies with:
      ```bash
         mvn clean install
-*All dependences should be installed and the tests also run successfully*
+*All dependences should be installed successfully*
 
 4. **Run Tests**
-For subsequent runs, simply execute:
+- For subsequent runs, simply execute:
    ```bash
       mvn test
+- During this test, an automated browser session will be launched to perform various actions. Please refrain from any manual interaction (such as clicking or touching) on the browser window, as this may disrupt the automation and cause the test to fail.
+- After running the tests, the results will be displayed in the terminal.
