@@ -1,0 +1,12 @@
+cover/go/utils/CoverGoUtils.class
+cover/go/pages/ProductDetailsPage.class
+cover/go/utils/DriverManager.class
+cover/go/pages/CheckoutPage.class
+cover/go/pages/AbstractPage.class
+cover/go/pages/LoginPage.class
+cover/go/pages/TheBurgerMenu.class
+cover/go/pages/CheckoutCompletePage.class
+cover/go/pages/CartPage.class
+cover/go/utils/TestParameters.class
+cover/go/pages/CheckoutOverviewPage.class
+cover/go/pages/InventoryPage.class
