@@ -1,7 +1,45 @@
 # Cover Go Home Task
 
-An overview of the setup and testing process for this project.
+A Selenium-based automation framework for testing the Saucedemo application. This framework uses Java, JUnit, and WebDriverManager to manage browser drivers. It follows the Page Object Model (POM) pattern to promote code reusability, readability, and maintainability.
+## Table of Contents
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Running Tests](#running-tests)
 
+## Overview
+This project is designed to:
+- Automate end-to-end tests for the [Saucedemo](https://www.saucedemo.com) website.
+- Use the Page Object Model to encapsulate UI elements and actions.
+- Provide utility classes for driver management, waiting, scrolling, and test parameter loading.
+- Support running tests sequentially (or in parallel if extended with ThreadLocal drivers).
+
+## Project Structure
+   ```bash
+        hometask
+            │
+            ├─── src
+            │     ├─── main
+            │     │      └─── java
+            │     │             └─── cover.go
+            │     │                       │
+            │     │                       ├─── pages
+            │     │                       │
+            │     │                       └─── utils
+            │     │
+            │     └─── test
+            │            ├─── java
+            │            │      └─── cover.go
+            │            │                │
+            │            │                ├─── login
+            │            │                │
+            │            │                ├─── shopping
+            │            │                │
+            │            │                └─── ui_navigation
+            │            └─── resources
+            │                                
+            └─── pom.xml
+   ```
 ## Prerequisites
 
 ### Maven (tested version 3.8.8)
@@ -23,26 +61,25 @@ An overview of the setup and testing process for this project.
 ### Browser (tested Firefox 135)
 - **Download Firefox:** Get the latest version from the Mozilla Firefox download page.
 - **Verification:** Make sure Firefox is updated to version 135 or above (check under "About Firefox").
-### Operation System
-Although the project should run on any operating system, it has been tested on:
-<font color="blue"> $${\color{green}MacOS}$$ $${\color{green}Monterey}$$ $${\color{green}12.7.6}$$</font>
+### Operating System (macOS Monterey)
+Although the project should run on any operating system, it has been tested on: macOS Monterey 12.7.6
 ## How to Run Tests
 1. **Clone the Repository:**  
    Clone the repository to your local machine.
    ```bash
       git clone git@github.com:sangcongtruong/hometask.git
 
-3. **Navigate to the Project Directory:**  
+2. **Navigate to the Project Directory:**  
    Change your current directory to the project's root folder.
    ```bash
       cd selenium-ui-automation
-5. **Initial Dependency Installation:**  
-- For the first run, install Maven dependencies with:
+3. **Initial Dependency Installation:**  
+ For the first run, install Maven dependencies with:
      ```bash
         mvn clean install
 *All dependences should be installed successfully*
 
-4. **Run Tests**
+## Running Tests
 - For subsequent runs, simply execute:
    ```bash
       mvn test
