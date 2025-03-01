@@ -58,11 +58,15 @@ This project is designed to:
        java --version
 *Your version should be 18 or above.*
 
-### Browser (tested Firefox 135)
-- **Download Firefox:** Get the latest version from the Mozilla Firefox download page.
-- **Verification:** Make sure Firefox is updated to version 135 or above (check under "About Firefox").
+### Browser
+Tested on below browsers:
+- *Firefox version 135* 
+- *Chrome version 133*
+- *Edge version 133*
 ### Operating System (macOS Monterey)
-Although the project should run on any operating system, it has been tested on: macOS Monterey 12.7.6
+Although the project should run on any operating system, it has been tested on:
+- *macOS Monterey 12.7.6*
+- *Windows 10*
 ## How to Run Tests
 1. **Clone the Repository:**  
    Clone the repository to your local machine.
@@ -80,8 +84,14 @@ Although the project should run on any operating system, it has been tested on: 
 *All dependences should be installed successfully*
 
 ## Running Tests
-- For subsequent runs, simply execute:
+- For subsequent runs with Firefox browser, simply execute:
    ```bash
       mvn test
+- To run with Chrome browser:
+   ```bash
+      mvn test -Dbrowser=chrome
+- To run with Egde browser:
+   ```bash
+      mvn test -Dbrowser=edge
 - During this test, an automated browser session will be launched to perform various actions. Please refrain from any manual interaction (such as clicking or touching) on the browser window, as this may disrupt the automation and cause the test to fail.
 - After running the tests, the results will be displayed in the terminal.
