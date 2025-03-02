@@ -76,7 +76,7 @@ Although the project should run on any operating system, it has been tested on:
 2. **Navigate to the Project Directory:**  
    Change your current directory to the project's root folder.
    ```bash
-      cd selenium-ui-automation
+      cd hometask
 3. **Initial Dependency Installation:**  
  For the first run, install Maven dependencies with:
      ```bash
